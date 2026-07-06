@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SKILL_DIR="skills/fast-ppt-master"
-OUT="fast-ppt-master-skill.tar.gz"
-
-tar -czf "$OUT" "$SKILL_DIR"
-echo "Packed → $OUT ($(du -sh "$OUT" | cut -f1))"
+cd skills/fast-ppt-master
+zip -r ../../fast-ppt-master.zip . -x '.*'
+cd ../..
+echo "Packed → fast-ppt-master.zip ($(du -sh fast-ppt-master.zip | cut -f1))"
