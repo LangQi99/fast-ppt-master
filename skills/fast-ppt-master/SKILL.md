@@ -61,14 +61,32 @@ Output:
 - `<project>/design_spec.md`
 - `<project>/spec_lock.md`
 
-### Step 5: Image Acquisition (Conditional)
+### Step 5: Image & Icon Acquisition (Conditional)
 
-Skip if no `ai`/`web` rows in resource list.
+Skip if design uses no images and no icons.
 
+**Images** — backgrounds, illustrations, photos:
+
+Use the agent's native image generation capability (e.g. `imagegen` skill, DALL-E, or host tool) to generate backgrounds, illustrations, and spot graphics. Save all images to `<project>/images/`.
+
+Alternatively, if `image_gen.py` is configured with an API key:
 ```bash
 python3 ${SKILL_DIR}/scripts/image_gen.py --manifest <project>/images/image_prompts.json
+```
+
+After all images are ready:
+```bash
 python3 ${SKILL_DIR}/scripts/analyze_images.py <project>/images
 ```
+
+**Icons** — use inline SVG paths directly in the page SVG:
+
+No icon library is bundled. Instead:
+- Draw simple icons as inline `<path>` / `<circle>` / `<rect>` elements directly in the SVG
+- For common icons (arrow, check, star, gear, etc.), write the path data by hand — they're simple geometry
+- For complex icons, generate them via the agent's image tool as small PNGs, or reference open icon CDNs (e.g. `https://unpkg.com/lucide-static@latest/icons/<name>.svg`) in the design spec for the user to download
+
+The executor should prefer SVG-native shapes over external icon files whenever possible.
 
 ### Step 6: Executor Phase
 
