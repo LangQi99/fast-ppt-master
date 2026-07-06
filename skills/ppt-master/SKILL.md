@@ -103,6 +103,23 @@ python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project>
 
 Output: `exports/<name>_<timestamp>.pptx`
 
+## Few-Shot SVG References
+
+Before generating SVG pages, read 1–2 relevant examples from `references/few-shot/`:
+
+| File | Page Type |
+|------|-----------|
+| `cover_minimalist.svg` | Clean cover page (Swiss grid style) |
+| `cover_academic.svg` | Academic paper cover |
+| `content_grid.svg` | Multi-column content layout |
+| `diagram_flow.svg` | Flow/process diagram |
+| `diagram_architecture.svg` | Architecture diagram |
+| `dark_tech.svg` | Dark theme technical page |
+| `chart_bubble.svg` | Data visualization (bubble chart) |
+| `table_data.svg` | Data table layout |
+
+Pick the closest match to the current page type. These are the structural patterns to follow.
+
 ## Reference Index
 
 | File | Purpose |
@@ -111,5 +128,6 @@ Output: `exports/<name>_<timestamp>.pptx`
 | `references/executor-base.md` | Executor guidelines |
 | `references/shared-standards.md` | SVG/PPTX technical constraints |
 | `references/canvas-formats.md` | Canvas dimension specs |
+| `references/few-shot/` | SVG page examples for executor |
 | `templates/design_spec_reference.md` | Design spec template |
 | `templates/spec_lock_reference.md` | Spec lock template |
