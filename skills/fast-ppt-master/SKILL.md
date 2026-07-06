@@ -109,14 +109,26 @@ Before generating SVG pages, read 1–2 relevant examples from `references/few-s
 
 | File | Page Type |
 |------|-----------|
-| `cover_minimalist.svg` | Clean cover page (Swiss grid style) |
+| `cover_minimalist.svg` | Clean cover (Swiss grid) |
 | `cover_academic.svg` | Academic paper cover |
 | `content_grid.svg` | Multi-column content layout |
+| `chinese_content.svg` | Chinese text content page |
 | `diagram_flow.svg` | Flow/process diagram |
 | `diagram_architecture.svg` | Architecture diagram |
+| `diagram_lifecycle.svg` | Lifecycle/state diagram |
 | `dark_tech.svg` | Dark theme technical page |
+| `tech_blueprint.svg` | Technical blueprint layout |
 | `chart_bubble.svg` | Data visualization (bubble chart) |
 | `table_data.svg` | Data table layout |
+| `kpi_dashboard.svg` | KPI/metrics dashboard |
+| `stats_memphis.svg` | Statistics with Memphis style |
+| `color_palette.svg` | Color/palette showcase |
+| `roadmap_timeline.svg` | Roadmap/timeline (glassmorphism) |
+| `roadmap_business.svg` | Business roadmap |
+| `brutalist_overview.svg` | Brutalist overview page |
+| `brutalist_timeline.svg` | Brutalist timeline |
+| `glassmorphism_cards.svg` | Glassmorphism card layout |
+| `map_infographic.svg` | Map/geographic infographic |
 
 Pick the closest match to the current page type. These are the structural patterns to follow.
 
