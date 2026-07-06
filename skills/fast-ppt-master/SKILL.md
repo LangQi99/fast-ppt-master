@@ -83,8 +83,7 @@ python3 ${SKILL_DIR}/scripts/analyze_images.py <project>/images
 
 No icon library is bundled. Instead:
 - Draw simple icons as inline `<path>` / `<circle>` / `<rect>` elements directly in the SVG
-- For common icons (arrow, check, star, gear, etc.), write the path data by hand — they're simple geometry
-- For complex icons, generate them via the agent's image tool as small PNGs, or reference open icon CDNs (e.g. `https://unpkg.com/lucide-static@latest/icons/<name>.svg`) in the design spec for the user to download
+- For complex icons, download from open icon sets (e.g. Lucide, Heroicons, Tabler) via curl/fetch into `<project>/icons/`, then reference in SVG as `<image>` or inline the `<path d="...">` data
 
 The executor should prefer SVG-native shapes over external icon files whenever possible.
 
