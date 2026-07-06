@@ -1,5 +1,5 @@
 ---
-name: ppt-master
+name: fast-ppt-master
 description: >
   AI-driven SVG-to-PPTX presentation generator. Source → Strategist → Executor → Export.
   Triggers: "create PPT", "make presentation", "生成PPT", "做PPT".
